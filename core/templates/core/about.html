@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block background %}{% load static %} {% static 'core/img/about-bg.jpg' %} {% endblock background %}
+
+{% block h %}Acerca de{% endblock h %}
+
+{% block subtitle %}Biografía{% endblock subtitle %}
+
+{% block content %}
+    <!-- Contenido Principal -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Anthony Smith</h2>
+          <p>Sujeto vergas</p>
+          <p>Salamanca gto. Lic. Sistemas de información Administrativa</p>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
