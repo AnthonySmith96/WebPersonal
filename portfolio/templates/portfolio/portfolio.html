@@ -1,10 +1,10 @@
 {% extends 'core/base.html' %}
 
-{% block title %}Proyectos{% endblock title %}
+{% block title %}Blog{% endblock title %}
 
 {% block background %}{% load static %} {% static 'core/img/portfolio-bg.jpg' %} {% endblock background %}
 
-{% block h %}Proyectos{% endblock h %}
+{% block h %}Blog{% endblock h %}
 
 {% block subtitle %}{% endblock subtitle %}
 
@@ -15,7 +15,7 @@
 	      <!-- Proyecto -->
 	      <div class="row project">
 	      	<div class="col-lg-3 col-md-4 offset-lg-1">
-			      <img class="img-fluid" src="{{ project.image.url }}" alt="">
+			      <img class="img-fluid" src="{{project.image.url}}" alt="">
 	      	</div>
 	        <div class="col-lg-7 col-md-8">
 	      		<h2 class="section-heading title">{{project.title}}</h2>
